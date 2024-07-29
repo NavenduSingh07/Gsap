@@ -12,9 +12,13 @@ body{
 }
 body{
     background-color: #111;
+
+}
+body{
+    overflow-x: hidden;
 }
 
-
+/* 
 #page1{
     height: 100%;
     width: 100%;
@@ -30,6 +34,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 50px;
 }
 #page3{
     height: 100%;
@@ -55,5 +61,43 @@ body{
     height: 300px;
     width: 300px;
     background-color: red;
+
+}
+h1{
+    font-size: 50px;
+    position: relative;
+    background-color: red;
+}
+h2{
+    font-size: 50px;
+    position: relative;
+    background-color: rgb(80, 71, 71);
+} */
+
+/* https://wethinkelastic.com/ */
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(23, 193, 250);
+    padding: 20px 0;
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(225, 115, 115);
+}
+
+#page2 h1{
+    font-size: 40vw;
+    text-transform: uppercase;
+    /* Transform:translate(-100%); */
 
 }
