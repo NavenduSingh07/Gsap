@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.to(cursor, {
             x: event.clientX,
             y: event.clientY,
-            duration: 0.8,
+            duration: 0.6,
             ease: "back.out"
         });
     });
@@ -67,14 +67,18 @@ document.addEventListener('DOMContentLoaded', () => {
     var imageDiv = document.querySelector('#image');
 
     imageDiv.addEventListener('mouseenter', function() {
+        cursor.innerHTML = "view more"
         gsap.to(cursor, {
-            scale: 2
+            scale: 2,
+            backgroundColor: "#ffffff4f"
         });
     });
 
     imageDiv.addEventListener('mouseleave', function() {
+        cursor.innerHTML = ""
         gsap.to(cursor, {
-            scale: 1
+            scale: 1,
+            backgroundColor: "#fff"
         });
     });
 });

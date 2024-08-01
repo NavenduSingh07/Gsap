@@ -35,13 +35,37 @@ body {
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 1000; /* Ensure the cursor is on top */
+    font-size: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 9;
+    color: black;
 }
 
 #image {
     height: 30vw;
     width: 60vw;
     background-color: red;
-    background-image: url(https://images.unsplash.com/photo-1721633617180-97c67428a48e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    position: relative;
+
+}
+    /* background-image: url(https://images.unsplash.com/photo-1721633617180-97c67428a48e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-position: center;
     background-size: cover;
+} */
+
+#image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay {
+    background-color: transparent;
+    height: 100%;
+    width:  100%;
+    position: absolute;
+    z-index: 10;
+    background-color: #ffffff4f;
 }
